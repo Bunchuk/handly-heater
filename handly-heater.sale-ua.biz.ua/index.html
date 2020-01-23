@@ -1,0 +1,566 @@
+<?php
+session_start();
+if(isset($_GET['sub_id'])){
+    $kod = trim($_GET['sub_id']);
+    $kod = strip_tags($kod);
+    $kod = htmlspecialchars($kod);
+    $_SESSION['kod'] = $kod;
+}
+?>
+<?php
+    //++UTM++
+    session_start();
+
+    foreach($_GET as $k => $v){
+        if(strpos($k, 'utm_') === 0) $_SESSION[$k] = validateWord($v);
+    }
+
+    function validateWord($word){
+        $word = trim($word);
+        $word = strip_tags($word);
+        $word = htmlspecialchars($word);
+        return $word;
+    }
+    //++UTM++
+?>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Handy Heater (Хенди Хитер) - портативный обогреватель:  купить Хенді Хітер в Украине</title>
+		<meta name="description" content="Портативный обогреватель Handy Heater отличается огромной мощностью, компактносью и экономичностью. Мы предлагаем купить Хенди Хитер (Хенді Хітер) в Украине с гарантией 2 года. Цена Вас приятно удивит!"/>
+		<meta name="keywords" content="handy heater, обогреватель handy heater, портативный обогреватель handy heater, handy heater цена, handy heater купить, handy heater в украине, хенди хитер, обогреватель хенди хитер, портативный обогреватель хенди хитер, хенди хитер цена, хенди хитер купить, хенди хитер в украине, хенді хітер, обігрівач хенді хітер, портативний обігрівач хенді хітер, хенді хітер ціна, хенді хітер купити, хенді хітер в україні">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="source/index/css/style.css" />
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="source/line/css/mphStyle.css"/>
+<div id="mph_head" style="background-color:#3b3b3b">
+	<div class="mph_area clearfix">
+		<div class="mph_phones">
+
+			<span><img src="source/line/img/mphNumber1.png"></span><span><img src="source/line/img/mphNumber2.png"></span><span><img src="source/line/img/mphNumber3.png"></span>
+			<div class="mph_circle"></div>
+		</div>
+		<div class="mph_times">
+			<div class="mph_workmode">РЕЖИМ РАБОТЫ:</div>
+			<div class="mph_worktime">
+				<p class="mph_weekdays">ПН-ПТ с 09<span>00</span> до 20<span>00</span></p>
+				<p class="mph_weekends">СБ-ВС с 10<span>00</span> до 19<span>00</span></p>
+			</div>
+		</div><div style="clear:both"></div>
+		<div style='text-align:center;font-size:14px;color:#fff'>Официальный сайт в Украине. Бесплатная консультация со специалистом. Оставьте заявку сейчас и мы Вам перезвоним в рабочее время!</div>	</div>
+</div>
+<div class="mph_space"></div>
+
+		<header class="offer_section">
+			<div class="wrapper clearfix">
+				<h1 class="main_title">Портативный обогреватель <span>Handy Heater</span></h1>
+				<div class="form_wrapper">
+					<div class="timer_block">
+						<p>До конца акции осталось:</p>
+						<div class="timer clearfix">
+							<div class="timer_item">
+								<div class="count hours">00</div>
+								<div class="text">часов</div>
+							</div>
+							<div class="timer_item">
+								<div class="count minutes">00</div>
+								<div class="text">минут</div>
+							</div>
+							<div class="timer_item">
+								<div class="count seconds">00</div>
+								<div class="text">секунд</div>
+							</div>
+						</div>
+					</div>
+					<form class="order_form orderformcdn" action="form.php" name="form1">
+						<input class="input" type="text" name="name_form" placeholder="Введите Ваше имя" required>
+						<input class="input" type="tel" name="phone_form" placeholder="Введите Ваш телефон" required>
+							<button class="button" type="submit" >Оформить заказ1</button>
+
+
+						<!-- <div id="error"></div> -->
+					</form>
+				</div>
+				<ul>
+					<li>Регулируемый термостат</li>
+					<li>Компактный и практичный</li>
+					<li>Невероятно мощный</li>
+				</ul>
+				<div class="discount">
+					<div class="text">Скидка</div>
+					<div class="value">50%</div>
+				</div>
+				<div class="price_block">
+					<div class="price_item old">
+						<div class="text">Старая цена:</div>
+						<div class="value">
+							<span class="price_land_s2">796</span>&nbsp;<span class="price_land_curr">грн.</span>
+						</div>
+					</div>
+					<div class="price_item new">
+						<span class="price_land_s1">398</span>&nbsp;<span class="price_land_curr">грн.</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="problems_section">
+			<div class="wrapper">
+				<h2><b>Вы знаете,</b> что осень</h2>
+				<p class="description">Не самое приятное время года</p>
+				<div class="problems_list clearfix">
+					<div class="problem_item">
+						<img src="source/index/img/problems__problem1_image.jpg" alt="">
+						<p>Отопительный сезон еще не начался?</p>
+					</div>
+					<div class="problem_item">
+						<img src="source/index/img/problems__problem2_image.jpg" alt="">
+						<p>Надоели громоздкие обогреватели?</p>
+					</div>
+					<div class="problem_item">
+						<img src="source/index/img/problems__problem3_image.jpg" alt="">
+						<p>Ваш обогреватель не справляются?</p>
+					</div>
+				</div>
+				<div class="info">
+					<h3>Handy Heater</h3>
+					<p>С легкостью решит эти проблемы!</p>
+				</div>
+			</div>
+		</section>
+		<section class="about_section">
+			<div class="wrapper clearfix">
+				<h3 class="h3">
+					<span>Новый</span>
+					<span>уровень</span>
+					<span>передачи</span>
+					<span>тепла</span>
+				</h3>
+				<div class="info">
+					<h4>Портативный обогреватель Handy Heater</h4>
+					<p>Это комнатный прибор, который подключается прямо к стенной розетке, не занимая свободного места. Несмотря на компактный размер, обогреватель отличается огромной мощностью и способен превратить холодную комнату в теплую и уютную. Пользоваться им очень просто: достаточно просто воткнуть в розетку и отрегулировать термостат до нужной температуры. Всего несколько минут - и холода как не бывало!</p>
+				</div>
+				<div class="clearfix"></div>
+				<div style="text-align: center;padding: 40px 0 20px;">
+					<iframe style="border-radius: 7px;" width="940" height="529" src="https://www.youtube.com/embed/CK4X3WlFpgI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="akc">
+					<h3>Акционная цена: 398 + 398 = <span>740</span></h3>
+					<p>При покупке двух обогревателей Handy Heater</p>
+					<p>Дополнительная экономия 56 грн.</p>
+				</div>
+			</div>
+		</section>
+		<section class="howto_section">
+			<div class="wrapper clearfix">
+				<h2>Домашние <span>тепло и уют</span><br>всегда с собой</h2>
+					<div style="float:left;width:32%">
+						<div class="how-to-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="source/index/img/2_1.jpg" class="img-responsive center" alt="Экономный переносной oбогреватель Handy Heater">
+							</figure>
+							<div class="how-to-text">
+								<p class="zagol">Включи</p>
+								<p>Просто подключите Handy Heater к любой розетке</p>
+							</div>
+						</div>
+					</div>
+					<div style="float:left;width:32%;margin-left:2%">
+						<div class="how-to-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="source/index/img/2_2.jpg" class="img-responsive center" alt="Экономный переносной oбогреватель Handy Heater">
+							</figure>
+							<div class="how-to-text">
+								<p class="zagol">Настрой</p>
+								<p>Выберите комфортную для Вас температуру на дисплее</p>
+							</div>
+						</div>
+					</div>
+					<div style="float:left;width:32%;margin-left:2%">
+						<div class="how-to-item">
+							<figure>
+								<div class="overlay"><i class="ti-plus"></i></div>
+								<img src="source/index/img/2_3.jpg" class="img-responsive center" alt="Экономный переносной oбогреватель Handy Heater">
+							</figure>
+							<div class="how-to-text">
+								<p class="zagol">Грейся</p>
+								<p>Если требуется — установите таймер желаемого времени обогрева</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="benefits_section">
+			<div class="wrapper">
+				<h3>Портативный обогреватель <span>Handy Heater</span></h3>
+				<div class="benefits_list">
+					<div class="benefit_item">
+						<img src="source/index/img/benefits__benefit1_icon.png" alt="">
+						<h4>Невероятно мощный</h4>
+						<p>Мощность этого малыша равняется 350 Вт. Он способен обогреть комнату 20-25 квадратных метров!</p>
+					</div>
+					<div class="benefit_item">
+						<img src="source/index/img/benefits__benefit2_icon.png" alt="">
+						<h4>Экономичный</h4>
+						<p>Несмотря на огромную мощность, обогреватель потребляет энергии не больше, чем ноутбук.</p>
+					</div>
+					<div class="benefit_item">
+						<img src="source/index/img/benefits__benefit3_icon.png" alt="">
+						<h4>Надежный</h4>
+						<p>Handy Heater оснащен безопасным нагревательным элементом и охлаждаемым пластиковым корпусом.</p>
+					</div>
+					<div class="benefit_item">
+						<img src="source/index/img/benefits__benefit4_icon.png" alt="">
+						<h4>Бесшумный</h4>
+						<p>Больше мощности - больше шума? Не с Handy Heater. Чтобы его услышать, нужно как следует сосредоточиться.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="characteristics_section">
+			<div class="wrapper clearfix">
+				<div class="info">
+					<h3>Характеристики <span>Handy Heater</span></h3>
+					<p>Успейте заказать компактный обогреватель <span>по супер-цене</span></p>
+					<div class="price_block">
+						<div class="price_item old">
+							<div class="text">Старая цена:</div>
+							<div class="value">
+								<span class="price_land_s2">1062</span>&nbsp;<span class="price_land_curr">грн.</span>
+							</div>
+						</div>
+						<div class="price_item new">
+							<span class="price_land_s1">398</span>&nbsp;<span class="price_land_curr">грн.</span>
+						</div>
+					</div>
+					<a href="#form2" class="button js-scrollTo">Заказать сейчас</a>
+				</div>
+				<div class="characteristics_list">
+					<div class="characteristic_item">
+						<div class="text">Размер (Д/В/Ш):</div>
+						<div class="value">8х15х9 см</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Термостат:</div>
+						<div class="value">от 15 до 32 °C</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Мощность:</div>
+						<div class="value">350 Вт</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Площадь обогрева:</div>
+						<div class="value">20-25 кв.м</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Напряжение:</div>
+						<div class="value">220-240 В</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Вес:</div>
+						<div class="value">0.48 кг</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Цвет:</div>
+						<div class="value">черный</div>
+					</div>
+					<div class="characteristic_item">
+						<div class="text">Доп. функции:</div>
+						<div class="value">Два режима обдува, программируемый 12-часовой таймер</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews_section">
+			<div class="wrapper">
+				<h2><span>Отзывы</span> покупателей</h2>
+				<p class="description">Более тысячи писем с благодарностью</p>
+				<div class="reviews_list">
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review1_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Михаил Кузнецов</div>
+							<p>Большую часть дня провожу за компьютерным столом в офисе.  Благо, что рядом есть розетка. Воткнул Handу Heater в розетку, настроил нужную температуру и теплый поток воздуха позволяет быстро согреться. Заказал себе еще один такой обогреватель домой – приспособлю его возле кровати.</p>
+						</div>
+					</div>
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review2_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Алла Николенко</div>
+							<p>Честно говоря, когда покупала этот обогреватель, сомневалась, что он сможет прогреть воздух в комнате 18 кв.м. Но была приятно удивлена, когда через 10 минут в гостиной стало тепло. В инструкции написано, что предназначен для обогрева помещений до 30 квадратов. Думаю, это правда.</p>
+						</div>
+					</div>
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review3_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Петр Васильев</div>
+							<p>Жена постоянно мерзнет, особенно в холодное время года. Халат, теплые носки, тапочки…Передвигаясь по квартире, тянет за собой масляный обогреватель. Вдоволь насмотревшись на эти мучения, купил ей в подарок Handy Heater  - это портативный обогреватель, который можно воткнуть в розетку. Судя по тому, с каким рвением благоверная начала им пользоваться, уже начал готовиться к платежкам по свету. Но меня ожидал сюрприз – обогреватель потребляет совсем немного. Доволен покупкой.</p>
+						</div>
+					</div>
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review4_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Юлия Попова</div>
+							<p>Недавно родственница попала в больницу. Сказать, что там холодно – ничего не сказать! Старые деревянные рамы, которые вообще не защищают от холода, и небольшая батарея на всю палату. Handy Heater стал просто спасением в такой ситуации. Быстро обогревает, практически не шумит, в общем, просто находка!</p>
+						</div>
+					</div>
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review5_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Марина Чаган</div>
+							<p>Живем втроем в однокомнатной квартире. Поэтому в доме развернуться просто не как: вещи, детские игрушки, поставить большой обогреватель некуда. С комнатным обогревателем   Handy Heater эта проблема быстро решилась. Он небольшой, вставляется в розетку, воздух прогревает быстро, есть возможность регулировать температуру обогрева.</p>
+						</div>
+					</div>
+					<div class="review_item clearfix">
+						<img src="source/index/img/reviews__review6_photo.png" alt="">
+						<div class="text_block">
+							<div class="author_info">Анастасия Воронцова</div>
+							<p>Этот мини-обогреватель мне подарили родители. С его помощью обогреваю комнату в 15 квадратов. Если нужно – могу взять его с собой на кухню. Очень хорошее приобретение: компактный, но мощный обогреватель. Работать с этим магазином тоже одно удовольствие: доставка быстрая, качество прибора отменное.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="order_info_section">
+			<div class="wrapper">
+				<h2><span>Доставка</span> и оплата</h2>
+				<div class="info_list">
+					<div class="info_item">
+						<img src="source/index/img/order_steps__step1_icon.jpg" alt="">
+						<p><b>Доставка Новой Почтой</b> в течении 1-2 рабочих дней, <b>УкрПочтой</b> - 2-4 дня.</p>
+					</div>
+					<div class="info_item">
+						<img src="source/index/img/order_steps__step2_icon.jpg" alt="">
+						<p><b>Никаких предоплат!</b> Оплата заказов осуществляется по факту получения товара.</p>
+					</div>
+					<div class="info_item">
+						<img src="source/index/img/order_steps__step3_icon.jpg" alt="">
+						<p>Вы в праве отказаться от покупки <b>в течение 14 дней</b> с момента получения товара.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="offer_section">
+			<div class="wrapper clearfix">
+				<h3 class="main_title">Портативный обогреватель <span>Handy Heater</span></h3>
+				<div class="form_wrapper">
+					<div class="timer_block">
+						<p>До конца акции осталось:</p>
+						<div class="timer clearfix">
+							<div class="timer_item">
+								<div class="count hours">00</div>
+								<div class="text">часов</div>
+							</div>
+							<div class="timer_item">
+								<div class="count minutes">00</div>
+								<div class="text">минут</div>
+							</div>
+							<div class="timer_item">
+								<div class="count seconds">00</div>
+								<div class="text">секунд</div>
+							</div>
+						</div>
+					</div>
+					<form class="order_form orderformcdn" action="form.php" name="form2" id="form2">
+						<input class="input" type="text" name="name_form" placeholder="Введите Ваше имя" id="inputName2">
+						<input class="input" type="tel" name="phone_form" placeholder="Введите Ваш телефон" id="inputPhone2">
+						<button class="button" type="submit">Оформить заказ</button>
+						<div id="error"></div>
+					</form>
+				</div>
+				<ul>
+					<li>Регулируемый термостат</li>
+					<li>Компактный и практичный</li>
+					<li>Невероятно мощный</li>
+				</ul>
+				<div class="discount">
+					<div class="text">Скидка</div>
+					<div class="value">50%</div>
+				</div>
+				<div class="price_block">
+					<div class="price_item old">
+						<div class="text">Старая цена:</div>
+						<div class="value">
+							<span class="price_land_s2">1062</span>&nbsp;<span class="price_land_curr">грн.</span>
+						</div>
+					</div>
+					<div class="price_item new">
+						<span class="price_land_s1">398</span>&nbsp;<span class="price_land_curr">грн.</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer_section">
+			<div class="copyright">
+				<p><a href="#" modal="polit">Политика конфиденциальности</a></p>
+				<p><a href="#" modal="otvet">Отказ от ответственности</a></p>
+			</div>
+		</footer>
+		<!-- <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script> -->
+		<div id="polit" class="modal">
+	<div class="modal-block">
+		<div class="icon-close"></div>
+		<div class="title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+		<div class="content">
+			<div class="padding">
+				<p>Мы признаем важность конфиденциальности информации. В этом документе описывается, какую личную информацию мы получаем и собираем, когда Вы пользуетесь нашим сайтом. Мы надеемся, что эти сведения помогут Вам принимать осознанные решения в отношении предоставляемой нам личной информации. Оставляя свои данные на нашем сайте, Вы соглашаетесь с Политикой конфиденциальности и защиты информации принятой владельцами этого сайта.</p>
+				<p style="font-weight:bold">Какую информацию мы собираем?</p>
+				<p>Мы собираем информацию об имени и номере телефона только тех посетителей нашего сайта, которые заполнили любую из форм на нашем сайте.</p>
+				<p style="font-weight:bold">Защита данных:</p>
+				<p>Ваши Имя и номер телефона никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства Украины.</p>
+				<p style="font-weight:bold">Получение персональной информации:</p>
+				<p>Ваше добровольное согласие оставить имя и номер телефона подтверждается путем ввода вашего имени и номера телефона в соответствующую форму. Информация, собранная после отправки формы на сайте (а именно: имя и номер телефона) нигде не публикуется и не доступна другим посетителям сайта. Имя используется для личного обращения к Вам, а номер телефона — для уточнения вопросов. При необходимости использовать ваши данные для целей, не упомянутых в настоящей политике конфиденциальности, мы всегда запрашиваем предварительное согласие на это.</p>
+				<p style="font-weight:bold">Протоколирование:</p>
+				<p>При каждом посещении сайта наши серверы автоматически записывают информацию, которую Ваш браузер передает при посещении веб-страниц. Как правило эта информация включает запрашиваемую веб-страницу, IP-адрес компьютера, тип браузера, языковые настройки браузера, дату и время запроса, а также один или несколько файлов cookie, которые позволяют точно идентифицировать Ваш браузер.</p>
+				<p style="font-weight:bold">Куки (Cookie):</p>
+				<p>На сайте используются куки (Cookies), происходит сбор данных о посетителях с помощью сервисов Яндекс Метрика. Эти данные служат для сбора информации о действиях посетителей на сайте, для улучшения качества его содержания и возможностей. В любое время Вы можете изменить параметры в настройках Вашего браузера таким образом, чтобы браузер перестал сохранять все файлы cookie, а так же оповещал их об отправке. При этом следует учесть, что в этом случае некоторые сервисы и функции могут перестать работать.</p>
+				<p style="font-weight:bold">Изменение Политики конфиденциальности:</p>
+				<p>На этой странице Вы сможете узнать о любых изменениях данной политики конфиденциальности. В особых случаях, Вам будет выслана информация на Ваш адрес электронной почты.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<link type="text/css" rel="stylesheet" href="source/modalPolit/css/custom-styles.min.css" />
+<div id="rc-connect" class="rc-reset rc-online">
+	<div id="rc-overlay" class="rc-reset"></div>
+	<div id="rc-popup" class="rc-reset">
+		<div id="rc-popup-close" class="rc-can-press rc-reset"></div>
+		<div id="rc-popup-text" class="rc-reset">
+			<span class="rc-txt rc-reset">Перезвоним за 30 секунд. Оставьте свой номер, и мы оперативно свяжемся с вами.</span>
+		</div>
+		<div id="rc-popup-form" class="rc-parent-form rc-reset">
+			<div id="rc-popup-form-field" class="rc-reset">
+				<div id="rc-popup-form-input-warning" class="rc-reset">
+					<div id="rc-popup-form-input-warning-header" class="rc-reset">
+						<span class="rc-txt rc-reset">Внимание!</span>
+					</div>
+					<div id="rc-popup-form-input-warning-mid" class="rc-reset">
+						<span class="rc-txt rc-reset">Проверьте правильность набранного номера</span>
+					</div>
+					<div id="rc-popup-form-input-warning-bottom" class="rc-reset"></div>
+				</div>
+				<div class="_27">
+					<input type="tel" id="rc-popup-form-input" class="rc-input-trigger rc-reset rc-poletext" placeholder="+38 Ваш телефон" />
+					<input type="hidden" id="userCity" name="city" value=""/>
+					<div class="flag-dropdown">
+						<div class="selected-flag" title="Ukraine (Україна): +38">
+							<div class="flag ua">
+								<div class="arrow"></div>
+							</div>
+						</div>
+						<ul class="country-list hide">
+							<li class="country active" data-dial-code="380" data-country-code="ua">
+								<div class="flag ua"></div>
+								<span class="country-name">Ukraine (Україна)</span>
+								<span class="dial-code">+38</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rc-call-progress rc-reset">
+					<div class="rc-progress-drag rc-reset"></div>
+				</div>
+			</div>
+			<!-- <div id="rc-popup-form-button" class="rc-trigger rc-can-press rc-reset" style="background-image: url(data:image/svg+xml;base64,CgkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIiB2ZXJzaW9uPSIxLjEiPgoJCQk8cGF0aCBmaWxsPSIjZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0Mi43MzQyNzksIDQxLjQ5OTQ0OSkgcm90YXRlKDEyMC4wMDAwMDApIHRyYW5zbGF0ZSgtNDIuNzM0Mjc5LCAtNDEuNDk5NDQ5KSIgZD0iTTI3LjkgNTAuMkMyNi42IDUwLjkgMjYgNTAuOSAyNSA0OS43IDI0LjcgNDkuNCAyNC44IDQ5LjEgMjUuMSA0OC45IDI4IDQ3LjMgMjkuOCA0Ni4yIDMyLjMgNDQuOCAzMi41IDQ0LjYgMzIuOCA0NC41IDMzLjEgNDQuNSAzMy4zIDQ0LjQgMzMuNiA0NC42IDMzLjcgNDQuNyAzNC4xIDQ1LjYgMzMuNiA0Ni45IDMyLjcgNDcuNCAzMS45IDQ3LjkgMzAuOCA0OC41IDMwLjIgNDguOCAyOS42IDQ5LjIgMjguNyA0OS44IDI3LjkgNTAuMlpNNTcuNSA1MC4yQzU4LjggNTAuOSA1OS40IDUwLjkgNjAuNCA0OS43IDYwLjcgNDkuNCA2MC43IDQ5LjEgNjAuMyA0OC45IDU3LjQgNDcuMyA1NS42IDQ2LjIgNTMuMiA0NC44IDUyLjkgNDQuNiA1Mi42IDQ0LjUgNTIuMyA0NC41IDUyLjIgNDQuNCA1MS44IDQ0LjYgNTEuOCA0NC43IDUxLjQgNDUuNiA1MS45IDQ2LjkgNTIuNyA0Ny40IDUzLjYgNDcuOSA1NC42IDQ4LjUgNTUuMiA0OC44IDU1LjkgNDkuMiA1Ni44IDQ5LjggNTcuNSA1MC4yWk02MC45IDQ3LjlDNTkuMiA0Ni45IDU0LjkgNDQuNCA1Mi45IDQzLjMgNTIuNyA0My4xIDUyLjQgNDIuOCA1Mi40IDQyLjUgNTIuMSA0MC43IDUwLjkgMzkuMyA0OSAzOS4zIDQ2LjkgMzkuMyA0NC44IDM5LjIgNDIuNyAzOS4yIDQwLjcgMzkuMiAzOC42IDM5LjMgMzYuNSAzOS4zIDM0LjYgMzkuMyAzMy40IDQwLjcgMzMuMSA0Mi41IDMzLjEgNDIuOCAzMi44IDQzLjEgMzIuNiA0My4zIDMwLjYgNDQuNCAyNy4xIDQ2LjQgMjQuNiA0Ny44IDI0LjMgNDggMjMuNyA0Ny44IDIzLjQgNDcgMjMuMiA0Ni40IDIzLjEgNDUuOCAyMyA0NS4yIDIyLjMgNDEuNyAyMy42IDM4IDI2LjggMzYuNCAyOC43IDM1LjQgMzAuNyAzNC42IDMyLjcgMzMuOSAzNS45IDMyLjYgMzkuMyAzMi4zIDQyLjcgMzIuNCA0Ni4yIDMyLjMgNDkuNSAzMi42IDUyLjggMzMuOSA1NC44IDM0LjYgNTYuOCAzNS40IDU4LjcgMzYuNCA2MS45IDM4IDYzLjIgNDEuNyA2Mi41IDQ1LjIgNjIuNCA0NS44IDYxLjkgNDYuOSA2MS43IDQ3LjUgNjEuNiA0Ny44IDYxLjIgNDggNjAuOSA0Ny45WiI+PC9wYXRoPgoJCTwvc3ZnPgoJ);"></div>
+		</div> -->
+	</div>
+	<!-- <div id="rc-phone" class="rc-inactive rc-reset rc-dark-back-color rc-bottom-right" style="bottom: 1%; left: auto; top: auto; right: 1%; position: fixed;">
+		<div id="rc-phone-highlight" class="rc-reset"></div>
+		<div id="rc-phone-back" class="rc-colorify rc-reset" style="border: 3px solid rgb(25, 139, 190); background-image: url(data:image/svg+xml;base64,CgkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIiB2ZXJzaW9uPSIxLjEiPgoJCQk8cGF0aCBmaWxsPSIjZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0Mi43MzQyNzksIDQxLjQ5OTQ0OSkgcm90YXRlKDEyMC4wMDAwMDApIHRyYW5zbGF0ZSgtNDIuNzM0Mjc5LCAtNDEuNDk5NDQ5KSIgZD0iTTI3LjkgNTAuMkMyNi42IDUwLjkgMjYgNTAuOSAyNSA0OS43IDI0LjcgNDkuNCAyNC44IDQ5LjEgMjUuMSA0OC45IDI4IDQ3LjMgMjkuOCA0Ni4yIDMyLjMgNDQuOCAzMi41IDQ0LjYgMzIuOCA0NC41IDMzLjEgNDQuNSAzMy4zIDQ0LjQgMzMuNiA0NC42IDMzLjcgNDQuNyAzNC4xIDQ1LjYgMzMuNiA0Ni45IDMyLjcgNDcuNCAzMS45IDQ3LjkgMzAuOCA0OC41IDMwLjIgNDguOCAyOS42IDQ5LjIgMjguNyA0OS44IDI3LjkgNTAuMlpNNTcuNSA1MC4yQzU4LjggNTAuOSA1OS40IDUwLjkgNjAuNCA0OS43IDYwLjcgNDkuNCA2MC43IDQ5LjEgNjAuMyA0OC45IDU3LjQgNDcuMyA1NS42IDQ2LjIgNTMuMiA0NC44IDUyLjkgNDQuNiA1Mi42IDQ0LjUgNTIuMyA0NC41IDUyLjIgNDQuNCA1MS44IDQ0LjYgNTEuOCA0NC43IDUxLjQgNDUuNiA1MS45IDQ2LjkgNTIuNyA0Ny40IDUzLjYgNDcuOSA1NC42IDQ4LjUgNTUuMiA0OC44IDU1LjkgNDkuMiA1Ni44IDQ5LjggNTcuNSA1MC4yWk02MC45IDQ3LjlDNTkuMiA0Ni45IDU0LjkgNDQuNCA1Mi45IDQzLjMgNTIuNyA0My4xIDUyLjQgNDIuOCA1Mi40IDQyLjUgNTIuMSA0MC43IDUwLjkgMzkuMyA0OSAzOS4zIDQ2LjkgMzkuMyA0NC44IDM5LjIgNDIuNyAzOS4yIDQwLjcgMzkuMiAzOC42IDM5LjMgMzYuNSAzOS4zIDM0LjYgMzkuMyAzMy40IDQwLjcgMzMuMSA0Mi41IDMzLjEgNDIuOCAzMi44IDQzLjEgMzIuNiA0My4zIDMwLjYgNDQuNCAyNy4xIDQ2LjQgMjQuNiA0Ny44IDI0LjMgNDggMjMuNyA0Ny44IDIzLjQgNDcgMjMuMiA0Ni40IDIzLjEgNDUuOCAyMyA0NS4yIDIyLjMgNDEuNyAyMy42IDM4IDI2LjggMzYuNCAyOC43IDM1LjQgMzAuNyAzNC42IDMyLjcgMzMuOSAzNS45IDMyLjYgMzkuMyAzMi4zIDQyLjcgMzIuNCA0Ni4yIDMyLjMgNDkuNSAzMi42IDUyLjggMzMuOSA1NC44IDM0LjYgNTYuOCAzNS40IDU4LjcgMzYuNCA2MS45IDM4IDYzLjIgNDEuNyA2Mi41IDQ1LjIgNjIuNCA0NS44IDYxLjkgNDYuOSA2MS43IDQ3LjUgNjEuNiA0Ny44IDYxLjIgNDggNjAuOSA0Ny45WiI+PC9wYXRoPgoJCTwvc3ZnPgoJ); background-color: rgba(8, 89, 126, 0.901961);"></div>
+		<div id="rc-phone-dial" class="rc-reset">
+			<div id="rc-phone-dial-snake" class="rc-reset">
+				<div id="rc-phone-dial-snake-curtain" class="rc-reset">
+					<div id="rc-phone-dial-half-circle" class="rc-reset">
+						<div id="rc-phone-dial-circle" class="rc-reset" style="border-color: rgb(8, 89, 126);"></div>
+					</div>
+				</div>
+				<div id="rc-phone-dial-snake-curtain2" class="rc-reset">
+					<div id="rc-phone-dial-half-circle2" class="rc-reset">
+						<div id="rc-phone-dial-circle2" class="rc-reset" style="border-color: rgb(8, 89, 126);"></div>
+					</div>
+				</div>
+			</div>
+			<div id="rc-phone-dial-close" class="rc-can-press rc-reset"></div>
+			<div id="rc-phone-dial-cnt" class="rc-reset" style="background-color: rgba(25, 139, 190, 0.901961);">
+				<div id="rc-phone-dial-ok" class="rc-reset">
+					<div id="rc-phone-dial-ok-curtain" class="rc-reset"></div>
+				</div>
+				<div id="rc-phone-dial-timer" class="rc-reset">
+					<span class="rc-txt rc-reset">00:30.00</span>
+				</div>
+				<div id="rc-phone-dial-descr" class="rc-reset">
+					<span class="rc-txt rc-reset" style="color: rgb(255, 255, 255);">Подождите...</span>
+				</div>
+			</div>
+		</div>
+		<div id="rc-move-background" class="rc-reset"></div>
+		<div id="rc-phone-form" class="rc-reset" style="right: 7px; background-color: rgba(25, 139, 190, 0.921569);">
+			<div id="rc-phone-form-flash" class="rc-reset rc-flash-move">
+				<div id="rc-phone-form-flash-el" class="rc-reset" style="background: rgb(8, 89, 126);"></div>
+			</div>
+			<div id="rc-phone-form-close" class="rc-can-press rc-reset"></div>
+			<div id="rc-phone-form-wrap-curtain" class="rc-parent-form rc-reset">
+				<div id="rc-phone-form-wrap" class="rc-parent-form rc-reset">
+					<div id="rc-recall" class="rc-no-select rc-reset">
+						<span class="rc-txt rc-reset" style="color: rgb(255, 255, 255); text-shadow: rgb(25, 139, 190) 0px 1px 0px;">Перезвоним за<br/>30 секунд!</span>
+					</div>
+					<div id="rc-phone-field" class="rc-reset">
+						<div id="rc-phone-input-warning" class="rc-reset">
+							<div id="rc-phone-input-warning-header" class="rc-reset">
+								<span class="rc-txt rc-reset">Внимание!</span>
+							</div>
+							<div id="rc-phone-input-warning-mid" class="rc-reset">
+								<span class="rc-txt rc-reset">Проверьте правильность набранного номера</span>
+							</div>
+							<div id="rc-phone-input-warning-bottom" class="rc-reset"></div>
+						</div>
+						<div class="_27">
+							<input type="tel" id="rc-phone-input" class="rc-input-trigger rc-reset" placeholder="+38 Ваш телефон">
+							<input type="hidden" id="rc-phone-product" name="product" value="Обогреватель Handy Heater">
+							<input type="hidden" id="rc-phone-price" name="price" value="499">
+							<input type="hidden" id="rc-phone-art" name="art" value="handyheater">
+							<div class="flag-dropdown">
+								<div class="selected-flag" title="Ukraine (Україна): +38">
+									<div class="flag ua">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div id="rc-phone-button" class="rc-trigger rc-no-select rc-can-press rc-reset" style="border-color: rgb(6, 71, 101); background-color: rgb(8, 89, 126);">
+						<div id="rc-phone-button-icon" class="rc-reset" style="background-image: url(data:image/svg+xml;base64,CgkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIiB2ZXJzaW9uPSIxLjEiPgoJCQk8cGF0aCBmaWxsPSIjZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0Mi43MzQyNzksIDQxLjQ5OTQ0OSkgcm90YXRlKDEyMC4wMDAwMDApIHRyYW5zbGF0ZSgtNDIuNzM0Mjc5LCAtNDEuNDk5NDQ5KSIgZD0iTTI3LjkgNTAuMkMyNi42IDUwLjkgMjYgNTAuOSAyNSA0OS43IDI0LjcgNDkuNCAyNC44IDQ5LjEgMjUuMSA0OC45IDI4IDQ3LjMgMjkuOCA0Ni4yIDMyLjMgNDQuOCAzMi41IDQ0LjYgMzIuOCA0NC41IDMzLjEgNDQuNSAzMy4zIDQ0LjQgMzMuNiA0NC42IDMzLjcgNDQuNyAzNC4xIDQ1LjYgMzMuNiA0Ni45IDMyLjcgNDcuNCAzMS45IDQ3LjkgMzAuOCA0OC41IDMwLjIgNDguOCAyOS42IDQ5LjIgMjguNyA0OS44IDI3LjkgNTAuMlpNNTcuNSA1MC4yQzU4LjggNTAuOSA1OS40IDUwLjkgNjAuNCA0OS43IDYwLjcgNDkuNCA2MC43IDQ5LjEgNjAuMyA0OC45IDU3LjQgNDcuMyA1NS42IDQ2LjIgNTMuMiA0NC44IDUyLjkgNDQuNiA1Mi42IDQ0LjUgNTIuMyA0NC41IDUyLjIgNDQuNCA1MS44IDQ0LjYgNTEuOCA0NC43IDUxLjQgNDUuNiA1MS45IDQ2LjkgNTIuNyA0Ny40IDUzLjYgNDcuOSA1NC42IDQ4LjUgNTUuMiA0OC44IDU1LjkgNDkuMiA1Ni44IDQ5LjggNTcuNSA1MC4yWk02MC45IDQ3LjlDNTkuMiA0Ni45IDU0LjkgNDQuNCA1Mi45IDQzLjMgNTIuNyA0My4xIDUyLjQgNDIuOCA1Mi40IDQyLjUgNTIuMSA0MC43IDUwLjkgMzkuMyA0OSAzOS4zIDQ2LjkgMzkuMyA0NC44IDM5LjIgNDIuNyAzOS4yIDQwLjcgMzkuMiAzOC42IDM5LjMgMzYuNSAzOS4zIDM0LjYgMzkuMyAzMy40IDQwLjcgMzMuMSA0Mi41IDMzLjEgNDIuOCAzMi44IDQzLjEgMzIuNiA0My4zIDMwLjYgNDQuNCAyNy4xIDQ2LjQgMjQuNiA0Ny44IDI0LjMgNDggMjMuNyA0Ny44IDIzLjQgNDcgMjMuMiA0Ni40IDIzLjEgNDUuOCAyMyA0NS4yIDIyLjMgNDEuNyAyMy42IDM4IDI2LjggMzYuNCAyOC43IDM1LjQgMzAuNyAzNC42IDMyLjcgMzMuOSAzNS45IDMyLjYgMzkuMyAzMi4zIDQyLjcgMzIuNCA0Ni4yIDMyLjMgNDkuNSAzMi42IDUyLjggMzMuOSA1NC44IDM0LjYgNTYuOCAzNS40IDU4LjcgMzYuNCA2MS45IDM4IDYzLjIgNDEuNyA2Mi41IDQ1LjIgNjIuNCA0NS44IDYxLjkgNDYuOSA2MS43IDQ3LjUgNjEuNiA0Ny44IDYxLjIgNDggNjAuOSA0Ny45WiI+PC9wYXRoPgoJCTwvc3ZnPgoJ);"></div>
+						<span class="rc-txt rc-reset" style="color: rgb(255, 255, 255); text-shadow: rgb(6, 71, 101) 0px 1px 0px;">Заказать звонок</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<link type="text/css" rel="stylesheet" href="source/blueCallback/styles/phone_style.css" /> -->
+<link type="text/css" rel="stylesheet" href="source/blueCallback/styles/widget_style.css"/>
+	<div class="goaway-modal-main">
+		<div id="close">
+			<a href="#" class="goaway-closeimg goaway-close"><div id="butclose" title="Закрыть"></div></a>
+		</div>
+
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="source/goaway/css/style.css">
+
+<script>
+	$(document).ready(function(){$("#modalInputPhone").inputmask("+38 (999) 999 - 99 - 99");});
+</script>
+
+
+	</body>
+</html>
